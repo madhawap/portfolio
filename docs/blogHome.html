@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Immersive-Envs</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/blogstyle.css">
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide"><img src="images/logo-small.png" alt="Immersive-env-logo" width="22" height="24"> ImmersiveEnvs</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button"><i class="fa-solid fa-circle-question"></i> ABOUT</a>
+      <a href="index.html#projects" class="w3-bar-item w3-button"><i class="fa-solid fa-briefcase"></i> PROJECTS</a>
+      <a href="index.html#students" class="w3-bar-item w3-button"><i class="fa-sharp fa-solid fa-people-group"></i> STUDENTS</a>
+      <a href="blogHome.html" class="w3-bar-item w3-button"><i class="fa-sharp fa-solid fa-people-group"></i> BLOG</a>
+      <a href="index.html#contact" class="w3-bar-item w3-button"><i class="fa-solid fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="index.html#projects" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a>
+  <a href="index.html#students" onclick="w3_close()" class="w3-bar-item w3-button">STUDENTS</a>
+  <a href="blogHome.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOG</a>
+  <a href="index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<div class="header">
+  <h2>EmmersiveEnvs Blog</h2>
+</div>
+
+<div class="banner">
+    <div class="banner__content">
+        <div class="banner__text">
+            <strong>Notice:</strong> This blog is still under construction. Please <a href="https://madhawacperera.medium.com/"
+                                                                                         style="text-decoration: underline">see my medium blog</a> for articles.
+        </div>
+        </button>
+    </div>
+</div>
+
+<div class="row" style="padding: 20px;">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Date</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <!-- <p>Abstract</p> -->
+    </div>
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Date</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>ImersiveEnvs</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text..</p>
+    </div>
+    <!-- <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div>
+    </div> -->
+    <div class="card">
+      <h3>Follow Us</h3>
+      <div class="w3-xlarge w3-section">
+        <a href="https://github.com/immersive-envs"><i class="fa-brands fa-github w3-hover-opacity"></i></a>
+        <a href="https://www.instagram.com/ImmersiveEnvs"><i class="fa-brands fa-instagram w3-hover-opacity"></i></a>
+        <a href="https://twitter.com/ImmersiveEnvs"><i class="fa-brands fa-twitter w3-hover-opacity"></i></a>
+        <a href="https://www.linkedin.com/company/immersive-envs/"><i class="fa-brands fa-linkedin w3-hover-opacity"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="blog.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://github.com/immersive-envs"><i class="fa-brands fa-github w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/ImmersiveEnvs"><i class="fa-brands fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/ImmersiveEnvs"><i class="fa-brands fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/company/immersive-envs/"><i class="fa-brands fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+</footer>
+
+<script>
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>

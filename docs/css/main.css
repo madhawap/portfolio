@@ -1,0 +1,64 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/cover1.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+
+/*set max width to your preferred mobile width.  I used 719 because your large banner is 720.*/
+@media (max-width: 719px) {
+    .lg {display:none;}
+    .sm {display:initial;}
+}
+
+/*set min width to be larger than the css rule above.*/
+@media (min-width: 720px) {
+    .lg {display:initial;}
+    .sm {display:none;}
+}
+
+/*Special Notices messages Styling Starts*/
+
+.banner {
+  background: #f50909;
+}
+
+.banner__content {
+  padding: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.banner__text {
+  flex-grow: 1;
+  line-height: 1.4;
+  font-family: "Quicksand", sans-serif;
+}
+
+.banner__close {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.banner__text,
+.banner__close > span {
+  color: #ffffff;
+}
+
+/*Special Notices messages Styling Ends*/

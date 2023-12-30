@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Immersive-Envs</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="index.html" class="w3-bar-item w3-button w3-wide"><img src="images/logo-small.png"
+                                                                        alt="Immersive-env-logo" width="22" height="24">
+            ImmersiveEnvs</a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+            <a href="index.html" class="w3-bar-item w3-button"><i class="fa-solid fa-circle-question"></i> ABOUT</a>
+            <a href="#projects" class="w3-bar-item w3-button"><i class="fa-solid fa-briefcase"></i> PROJECTS</a>
+            <a href="#students" class="w3-bar-item w3-button"><i class="fa-sharp fa-solid fa-people-group"></i> STUDENTS</a>
+            <a href="blogHome.html" class="w3-bar-item w3-button"><i class="fa-sharp fa-solid fa-people-group"></i> BLOG</a>
+            <a href="#contact" class="w3-bar-item w3-button"><i class="fa-solid fa-envelope"></i> CONTACT</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+           onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none"
+     id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a>
+    <a href="#students" onclick="w3_close()" class="w3-bar-item w3-button">STUDENTS</a>
+    <a href="blogHome.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOG</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<div class="banner" style="padding:60px 0px 0px 0px">
+    <div class="banner__content">
+        <div class="banner__text">
+            <strong>Notice:</strong> This website is still under construction. Please <a href="#contact"
+                                                                                         style="text-decoration: underline">contact
+            me</a> for more information.
+        </div>
+    </div>
+</div>
+
+<!-- Header with full-height image -->
+<div class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-left w3-text-white" style="padding:48px">
+        <span class="w3-jumbo w3-hide-small" style="background-color:rgba(0, 0, 0, 0.5); padding:5px">Immersive Environments in HCI</span><br>
+        <span class="w3-xxlarge w3-hide-large w3-hide-medium" style="background-color:rgba(0, 0, 0, 0.7);">Immersive Environments in HCI</span><br>
+        <!-- <span class="w3-jumbo w3-hide-small">Immersive Environments in HCI</span><br> -->
+        <!-- <span class="w3-xxlarge w3-hide-large w3-hide-medium">Immersive Environments in HCI</span><br> -->
+        <span class="w3-large" style="background-color:rgba(0, 0, 0, 0.5); padding:5px">AR, VR and MR for Human Computer Interaction (HCI) Research</span>
+        <p><a href="https://madhawaperera.com/"
+              class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off"><img
+                src="images/mylogo.png" alt="Immersive-env-logo" width="26" height="26">  About Me</a></p>
+    </div>
+    <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+        <a href="https://github.com/immersive-envs"><i class="fa-brands fa-github w3-hover-opacity"></i></a>
+        <a href="https://www.instagram.com/ImmersiveEnvs"><i class="fa-brands fa-instagram w3-hover-opacity"></i></a>
+        <a href="https://twitter.com/ImmersiveEnvs"><i class="fa-brands fa-twitter w3-hover-opacity"></i></a>
+        <a href="https://www.linkedin.com/company/immersive-envs/"><i
+                class="fa-brands fa-linkedin w3-hover-opacity"></i></a>
+    </div>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="projects">
+    <h3 class="w3-center">PROJECTS</h3>
+    <!-- <p class="w3-center w3-large">These are some of the work we do @ ImmersiveEnvs.</p> -->
+    <div class="w3-row-padding" style="margin-top:64px">
+        <div class="w3-col l3 m3">
+            <div class="w3-row-padding">
+                <a href="projects/vrRobot/vrRobot.html"><img src="projects/vrRobot/vrRobotTeaser.png" style="width:100%"
+                                                             onclick="onClick(this)" class="w3-hover-opacity"
+                                                             alt="vrRobot"></a>
+            </div>
+            <div class="w3-left w3-row-padding">
+                Remote Robot Arm Controller through Virtual Reality and Computer Vision.
+            </div>
+        </div>
+        <div class="w3-col l3 m3">
+            <div class="w3-row-padding">
+                <a href=""><img src="images/projects/projSample.png" style="width:100%" onclick="onClick(this)"
+                     class="w3-hover-opacity" alt="Legacy Bias"></a>
+            </div>
+            <div class="w3-left w3-row-padding">
+                Details will be available soon...
+            </div>
+        </div>
+        <div class="w3-col l3 m3">
+            <div class="w3-row-padding">
+                <a href="projects/vrGES/vrGES.html"><img src="projects/vrGES/vrGESTeaser.png" style="width:100%"
+                                                         onclick="onClick(this)" class="w3-hover-opacity"
+                                                         alt="Comparison"></a>
+            </div>
+            <div class="w3-left w3-row-padding">
+                Interactive Gesture Elicitation using Virtual Reality
+            </div>
+        </div>
+        <div class="w3-col l3 m3">
+            <div class="w3-row-padding">
+                <a href="projects/hdgiOntology/hdgiOntology.html"><img src="projects/hdgiOntology/hdgiOntoTeaser.png" style="width:100%" onclick="onClick(this)"
+                     class="w3-hover-opacity" alt="Designer Hands"></a>
+            </div>
+            <div class="w3-left w3-row-padding">
+                Hand Gesture Modelling: Human Device Gesture Interation (HDGI) Ontology
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding" style="margin-top:64px">
+        <div class="w3-col l3 m3">
+            <div class="w3-row-padding">
+                <a href="projects/gestureProfiles/gestureProfiles.html"><img
+                        src="projects/gestureProfiles/gestureProfilesTeaser.png" style="width:100%"
+                        onclick="onClick(this)" class="w3-hover-opacity" alt="VR GES"></a>
+            </div>
+            <div class="w3-left w3-row-padding">
+                Gesture Profiles with Augmented Reality: Concept and HiFi Prototype
+            </div>
+        </div>
+        <div class="w3-col l3 m3">
+            <div class="w3-row-padding">
+                <a href="projects/arGES/arGes.html"><img src="projects/arGES/arGESTeaser.png" style="width:100%" onclick="onClick(this)"
+                     class="w3-hover-opacity" alt="AR GES"></a>
+            </div>
+            <div class="w3-left w3-row-padding">
+                Interactive Gesture Elicitation using Augmented Reality
+            </div>
+        </div>
+        <div class="w3-col l3 m3">
+            <div class="w3-row-padding">
+                <a href="projects/designerHands/designerHands.html"><img src="projects/designerHands/designerHandsTeaser.png" style="width:100%" onclick="onClick(this)"
+                     class="w3-hover-opacity" alt="designerHands"></a>
+            </div>
+            <div class="w3-left w3-row-padding">
+                Designer Hands: AR & VR based hand gesture Designer Tool
+            </div>
+        </div>
+        <div class="w3-col l3 m3">
+            <div class="w3-row-padding">
+                <a href="projects/metaDataExtract/metaDataExtract.html"><img src="projects/metaDataExtract/3DMetaDataTeaser.png" style="width:100%" onclick="onClick(this)"
+                     class="w3-hover-opacity" alt="metaDataExtract"></a>
+            </div>
+            <div class="w3-left w3-row-padding">
+                Augmented Reality based 3D meta data extractor for indoor objects
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding" style="margin-top:64px">
+        <div class="w3-col l3 m3">
+            <div class="w3-row-padding">
+                <a href="projects/gesLabelling/gesLabelling.html"><img
+                        src="projects/gesLabelling/gestureLabellingTeaser.png" style="width:100%"
+                        onclick="onClick(this)" class="w3-hover-opacity" alt="gesLabelling"></a>
+            </div>
+            <div class="w3-left w3-row-padding">
+                Hand Gesture Labelling Techniques
+            </div>
+        </div>
+        <div class="w3-col l3 m3">
+            <div class="w3-row-padding">
+                <a href="projects/vrConfusion/vrConfusion.html"><img src="projects/vrConfusion/vrConfusionTeaser.png" style="width:100%" onclick="onClick(this)"
+                     class="w3-hover-opacity" alt="vrConfusion"></a>
+            </div>
+            <div class="w3-left w3-row-padding">
+                Investigating User Confusion in Immersive Virtual Reality Environments
+            </div>
+        </div>
+        <div class="w3-col l3 m3">
+            <div class="w3-row-padding">
+                <a href="projects/webVR/webVR.html"><img src="projects/webVR/webvrTeaser.png" style="width:100%" onclick="onClick(this)"
+                     class="w3-hover-opacity" alt="vrConfusion"></a>
+            </div>
+            <div class="w3-left w3-row-padding">
+                WebVR Interactions: Using hand gestures and voice to manipulate 3D objects on the web
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="students">
+    <h3 class="w3-center">STUDENTS</h3>
+    <!-- <p class="w3-center w3-large">Students @ ImmersiveEnvs</p> -->
+    <div class="w3-row"><br>
+        <div class="w3-quarter">
+            <img src="images/students/xingjianLeng1.png" alt="XingjianLeng" style="width:45%"
+                 class="w3-circle w3-hover-opacity">
+            <h4>Xingjian Leng</h4>
+            <!-- <p>Australian National University</p>
+            <p>Australian National University</p> -->
+        </div>
+        <div class="w3-quarter">
+            <img src="images/students/leiZhang1.png" alt="LeiZhang" style="width:45%"
+                 class="w3-circle w3-hover-opacity">
+            <h4>Lei Zhang</h4>
+        </div>
+        <div class="w3-quarter">
+            <img src="images/students/yichenWang.png" alt="YichenWang" style="width:45%"
+                 class="w3-circle w3-hover-opacity">
+            <h4>Yichen Wang</h4>
+        </div>
+        <div class="w3-quarter">
+            <img src="images/students/yuanfeiFan.png" alt="YuanfeiFan" style="width:45%"
+                 class="w3-circle w3-hover-opacity">
+            <h4>Yuanfei Fan</h4>
+        </div>
+    </div>
+    <div class="w3-row"><br>
+        <div class="w3-quarter">
+            <img src="images/students/siyuFang.png" alt="SiyuFang" style="width:45%" class="w3-circle w3-hover-opacity">
+            <h4>Siyu Fang</h4>
+        </div>
+        <div class="w3-quarter">
+            <img src="images/students/yushuGao1.png" alt="YushuGao" style="width:45%"
+                 class="w3-circle w3-hover-opacity">
+            <h4>Yushu Gao</h4>
+        </div>
+        <div class="w3-quarter">
+            <img src="images/students/yangfeiGao.png" alt="YangfeiGao" style="width:45%"
+                 class="w3-circle w3-hover-opacity">
+            <h4>Yangfei Gao</h4>
+        </div>
+        <div class="w3-quarter">
+            <img src="images/students/yuxuanHu1.png" alt="YuxuanHu" style="width:45%"
+                 class="w3-circle w3-hover-opacity">
+            <h4>Yuxuan Hu</h4>
+        </div>
+    </div>
+    <div class="w3-row"><br>
+        <div class="w3-quarter">
+            <img src="images/students/haotianWeng.png" alt="HaotianWeng" style="width:45%"
+                 class="w3-circle w3-hover-opacity">
+            <h4>Haotian Weng</h4>
+        </div>
+        <div class="w3-quarter">
+            <img src="images/students/duongPham.png" alt="DuongPham" style="width:45%"
+                 class="w3-circle w3-hover-opacity">
+            <h4>Duong Pham</h4>
+        </div>
+        <div class="w3-quarter">
+            <img src="images/students/guanghaoTan1.png" alt="GuanghaoTan" style="width:45%"
+                 class="w3-circle w3-hover-opacity">
+            <h4>Guanghao Tan</h4>
+        </div>
+        <div class="w3-quarter">
+            <img src="images/students/calvinChan1.png" alt="CalvinChan" style="width:45%"
+                 class="w3-circle w3-hover-opacity">
+            <h4>Calvin Chan</h4>
+        </div>
+    </div>
+    <div class="w3-row"><br>
+        <div class="w3-quarter">
+            <img src="images/students/diJiang.png" alt="DiJiang" style="width:45%" class="w3-circle w3-hover-opacity">
+            <h4>Di Jiang</h4>
+        </div>
+        <div class="w3-quarter">
+            <img src="images/students/bojieJia.png" alt="BojieJia" style="width:45%" class="w3-circle w3-hover-opacity">
+            <h4>Bojie Jia</h4>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Container -->
+<div class="w3-container w3-light-grey" style="padding:100px 16px" id="contact">
+    <h3 class="w3-center">CONTACT</h3>
+    <p class="w3-center w3-large">Like to collaborate with me to explore immersive environments? Send me a message:</p>
+    <div style="margin-top:40px">
+        <!-- <div class="w3-row w3-center"><br>
+          <div class="w3-half">
+            <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Canberra, Australia</p>
+          </div>
+          <div class="w3-half">
+            <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> email goes here</p>
+          </div>
+        </div> -->
+        <br>
+        <form action="https://formspree.io/f/mrgdrwqy" method="POST" enctype="multipart/form-data">
+            <p><input class="w3-input w3-border" type="text" placeholder="Your First and Last Name" required
+                      name="Name"></p>
+            <p><input class="w3-input w3-border" type="email" placeholder="Your email" required name="Email"></p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+            <p>Your CV (Optional)<input class="w3-input w3-border" type="file" placeholder="YourCV" required
+                                        name="Upload"></p>
+            <p class="w3-center">
+                <button class="w3-button w3-black" type="submit">
+                    <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                </button>
+            </p>
+        </form>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+        <a href="https://github.com/immersive-envs"><i class="fa-brands fa-github w3-hover-opacity"></i></a>
+        <a href="https://www.instagram.com/ImmersiveEnvs"><i class="fa-brands fa-instagram w3-hover-opacity"></i></a>
+        <a href="https://twitter.com/ImmersiveEnvs"><i class="fa-brands fa-twitter w3-hover-opacity"></i></a>
+        <a href="https://www.linkedin.com/company/immersive-envs/"><i
+                class="fa-brands fa-linkedin w3-hover-opacity"></i></a>
+    </div>
+</footer>
+
+<script>
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+
+    function w3_open() {
+        if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+        } else {
+            mySidebar.style.display = 'block';
+        }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+        mySidebar.style.display = "none";
+    }
+</script>
+
+</body>
+</html>
